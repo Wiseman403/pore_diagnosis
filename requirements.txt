@@ -1,0 +1,24 @@
+# Core
+numpy>=1.24
+scipy>=1.11
+opencv-python>=4.8
+scikit-image>=0.22
+matplotlib>=3.7
+Pillow>=10.0
+
+# Face landmarks
+mediapipe>=0.10.14
+
+# Face parsing (ONNX runtime for BiSeNet)
+onnxruntime-gpu>=1.18 ; platform_system != "Darwin"
+onnxruntime>=1.18     ; platform_system == "Darwin"
+
+# Foundation models (Stage 7)
+torch>=2.3
+torchvision>=0.18
+transformers>=4.45    # Sam2Model requires >=4.45
+accelerate>=0.33
+huggingface_hub>=0.24
+
+# Utilities
+tqdm>=4.66
